@@ -1,0 +1,42 @@
+body{
+background:#0f0f0f;
+color:white;
+font-family:Arial;
+text-align:center;
+}
+
+header{
+background:#1a1a1a;
+padding:20px;
+}
+
+nav{
+margin:20px;
+}
+
+nav a{
+color:#b266ff;
+margin:10px;
+font-size:20px;
+text-decoration:none;
+}
+
+nav a:hover{
+color:#ff66cc;
+}
+
+.anime{
+background:#1f1f1f;
+margin:30px auto;
+padding:20px;
+width:200px;
+border-radius:10px;
+}
+
+button{
+background:#b266ff;
+border:none;
+padding:10px 20px;
+color:white;
+cursor:pointer;
+}
