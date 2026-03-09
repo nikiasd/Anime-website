@@ -1,0 +1,137 @@
+/* עיצוב כללי */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #050505;
+    color: white;
+    text-align: center;
+}
+
+.overlay {
+    background: linear-gradient(135deg, rgba(10,15,40,0.95) 0%, rgba(5,5,5,0.9) 100%);
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+
+/* תפריט ניווט */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0,0,0,0.7);
+    border-bottom: 2px solid #1e90ff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #1e90ff;
+    text-shadow: 0 0 10px #00ffff;
+}
+
+.logo span { color: #00ffff; }
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-right: 25px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover { 
+    color: #00ffff;
+    text-shadow: 0 0 8px #00ffff;
+}
+
+/* אזור הגיבור */
+.hero {
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin-bottom: 15px;
+    color: #1e90ff;
+    text-shadow: 0 0 25px #00ffff;
+}
+
+.hero p {
+    font-size: 24px;
+    color: #00ffff;
+    margin-bottom: 30px;
+}
+
+/* כרטיסים ורשת */
+.anime-grid {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+    padding: 20px 50px;
+}
+
+.card {
+    background: rgba(26, 26, 26, 0.8);
+    width: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.5s ease;
+    border: 1px solid #333;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.card:hover {
+    transform: translateY(-15px) scale(1.02);
+    border-color: #00ffff;
+    box-shadow: 0 0 30px rgba(0,255,255,0.3);
+}
+
+.card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-bottom: 3px solid #1e90ff;
+}
+
+.card-content {
+    padding: 20px;
+    text-align: right;
+}
+
+.card-content h3 {
+    margin: 0;
+    color: #1e90ff;
+    font-size: 24px;
+}
+
+.card-content p {
+    color: #ccc;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.card a { text-decoration: none; }
+
+/* כפתורים */
+.button {
+    display: inline-block;
+    background: linear-gradient(45deg, #1e90ff, #00ffff);
+    color: white;
+    padding: 18px 45px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.4s;
+    box-shadow: 0 5px 15px rgba(0,255,255,0.4);
+}
+
+.button:hover { 
+    transform: scale(1.1); 
+    box-shadow: 0 0 30px #00ffff; 
+}
